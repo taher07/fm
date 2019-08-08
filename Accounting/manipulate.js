@@ -18,9 +18,9 @@ function addSomething(e)
 }
 writeOverHere = entry => {
     let ob = document.getElementsByClassName("addHere");
-    let today = new Date;
-    console.log(nature,op,amt,narr);
-    if(nature === "Capital")
+    let today = new Date();
+    console.log(entry);
+    if(entry.nature === "Capital")
     {
         ob.innerHTML = `<tr>
             <td>${today.getDate() + '/' + today.getMonth() + '/' + today.getFullYear()}</td>
