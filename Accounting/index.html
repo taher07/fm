@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="taher lunavadi">
+    <meta name="author" content="Taher Lunavadi">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Accounting</title>
@@ -31,16 +31,15 @@
             <br><br>
             <button type="submit" value="Done!" onclick="addSomething(event)">Done!</button>
         </form>
-        <table>
-                <tr>
+        <table id="ac-table">
+                <thead>
                     <th>Date</th>
                     <th>Operation</th>
                     <th>Capital Account</th>
                     <th>Expenses Account</th>
                     <th>Narration</th>
-                </tr>
-                <div class="addHere" onload="writeOverHere()">
-                </div>
+                </thead>
+                <tbody id="addHere"></tbody>
             </table>
     </div>
     <script src="manipulate.js"></script>
